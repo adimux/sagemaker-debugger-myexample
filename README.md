@@ -11,3 +11,11 @@ I hope I can can improve on them on the next few months as I'm learning how to u
 * `examples/2-train-job.ipynb` - the recommended way by SageMaker: launching a training job outside the notebook
 * `examples/3-train-profile-debug` builds upon the previous examples and enables debugger/profiler capabilities
 
+
+### How to reproduce?
+
+* Open your AWS Console -> SageMaker
+* Start SageMaker Studio
+* Copy the examples/ folder into a _subfolder_ (like `examples/`).
+  Important because SageMaker uploads the folder in which your training script is located
+  when you start a training job. You don't want to copy the root folder.
