@@ -24,8 +24,8 @@ def train(batch_size, epoch, model):
     X_valid = X_valid[val_idx]
     y_valid = y_valid[val_idx]
 
-    Y_train = to_categorical(y_train, 10)
-    Y_valid = to_categorical(y_valid, 10)
+    Y_train = to_categorical(y_train, 3)
+    Y_valid = to_categorical(y_valid, 3)
 
     X_train = X_train.astype("float32")
     X_valid = X_valid.astype("float32")
